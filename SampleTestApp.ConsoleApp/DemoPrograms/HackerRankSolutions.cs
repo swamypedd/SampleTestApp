@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using System.Text;
 
 namespace SampleTestApp.ConsoleApp.DemoPrograms
 {
@@ -132,6 +133,50 @@ namespace SampleTestApp.ConsoleApp.DemoPrograms
             counts[2] = aCount;
 
             Console.WriteLine($"BananaCount : {counts.OrderBy(c => c).First()}");
+        }
+
+        public static void CaesarCipher(string s, int k)
+        {
+            s = " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            k = 2;
+            k = k % 26;
+
+            string outString = string.Empty;
+
+            foreach (char c in s)
+            {
+                //Console.WriteLine($"{c}   {(int)c}   {(int)c}");
+
+                byte[] tempByte = new byte[1];
+                if ((int)c >= 65 && (int)c <= 90)
+                {
+                    tempByte[0] = (byte)((byte)c + k);
+
+                    if (tempByte[0] > 90)
+                    {
+                        tempByte[0] = (byte)(tempByte[0] - 90 + 64);
+                    }
+
+                    outString = outString + Encoding.ASCII.GetString(tempByte);
+                }
+                else if ((int)c >= 97 && (int)c <= 122)
+                {
+                    tempByte[0] = (byte)((byte)c + k);
+
+                    if (tempByte[0] > 122)
+                    {
+                        tempByte[0] = (byte)(tempByte[0] - 122 + 96);
+                    }
+
+                    outString = outString + Encoding.ASCII.GetString(tempByte);
+                }
+                else
+                {
+                    outString = outString + c;
+                }
+            }
+
+            Console.WriteLine(outString);
         }
     }
 }

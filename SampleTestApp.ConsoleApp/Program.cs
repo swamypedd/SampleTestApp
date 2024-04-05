@@ -1,19 +1,18 @@
-﻿using SampleTestApp.ConsoleApp.DemoPrograms.EventsDelegates;
-
-namespace SampleTestApp.ConsoleApp
+﻿namespace SampleTestApp.ConsoleApp
 {
     internal class Program
     {
         public static void Main(string[] args)
         {
-            DelegateDemo.InvokeDelegateDemo();
-
+            //DelegateDemo.InvokeDelegateDemo();
             //EventsDelegatesDemo.EventsDelegatesDemoMethod();
+
             //HackerRankSolutions.PositiveNegativeProportions();
             //HackerRankSolutions.MinMaxSum();
             //HackerRankSolutions.TimeConversion();
             //HackerRankSolutions.GetLonelyInteger();
             //HackerRankSolutions.DiagonalDifference();
+            //HackerRankSolutions.CaesarCipher("", 2);
 
             //CountBitsAndPieces();
 

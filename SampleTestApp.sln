@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleTestApp.WebApi", "Sam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleTestApp.WebApi.600", "SampleTestApp.WebApi.600\SampleTestApp.WebApi.600.csproj", "{CF057BFF-5C77-4A95-AAE8-A35FD7506D00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTestApp.ConsoleApp", "SampleTestApp.ConsoleApp\SampleTestApp.ConsoleApp.csproj", "{A928A142-590C-4BD9-A70B-B2FB0AD8A0F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleTestApp.ConsoleApp", "SampleTestApp.ConsoleApp\SampleTestApp.ConsoleApp.csproj", "{A928A142-590C-4BD9-A70B-B2FB0AD8A0F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

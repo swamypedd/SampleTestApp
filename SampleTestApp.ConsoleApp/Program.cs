@@ -1,4 +1,6 @@
-﻿namespace SampleTestApp.ConsoleApp
+﻿using SampleTestApp.ConsoleApp.DemoPrograms;
+
+namespace SampleTestApp.ConsoleApp
 {
     internal class Program
     {
@@ -15,9 +17,10 @@
             //HackerRankSolutions.CaesarCipher("", 2);
 
             //CountBitsAndPieces();
-
             //AsyncAwait.Maining();
-            //Console.WriteLine("************************ End of program ************************");
+
+            DemoSolutions.MultiplicationCalculator(1234, 9223372036854775807);
+            Console.WriteLine("************************ End of program ************************");
         }
     }
 }
